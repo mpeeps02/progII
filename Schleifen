@@ -1,0 +1,94 @@
+IF-ELSE-STATEMENT
+int time = 22;
+if (time < 10) {
+  System.out.println("Good morning.");
+} else if (time < 20) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+VORLAGE
+if (){
+System.out.println();
+}else{System.out.println();};
+
+SWITCH-STATEMENT
+int day = 4;
+switch (day) {
+  case 6:
+    System.out.println("Today is Saturday");
+    break;
+  case 7:
+    System.out.println("Today is Sunday");
+    break;
+  default:
+    System.out.println("Looking forward to the Weekend");
+}
+VORLAGE
+switch () {
+  case :
+    System.out.println("");
+    break;
+  case :
+    System.out.println("");
+    break;
+  default:
+    System.out.println("");
+}
+WHILE-STATEMENT
+int i = 0;
+while (i < 5) {
+  System.out.println(i);
+  i++;
+}
+VORLAGE
+while () {
+  System.out.println();
+  i++;
+}
+
+DO-WHILE-STATEMENT
+int i = 0;
+do {
+  System.out.println(i);
+  i++;
+}
+while (i < 5);
+VORLAGE
+
+do {
+  System.out.println(i);
+  i++;
+}
+while ();
+
+FOR-STATEMENT
+for (int i = 0; i < 5; i++) {
+  System.out.println(i);
+}
+VORLAGE
+for (int i = 0; i < ; i++) {
+  System.out.println(i);
+}
+FOR-EACH-LOOP
+String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+for (String i : cars) {
+  System.out.println(i);
+}
+BREAK/CONTINUE
+for (int i = 0; i < 10; i++) {
+  if (i == 4) {
+    break/continue;
+  }
+  System.out.println(i);
+}
+int i = 0;
+while (i < 10) {
+  System.out.println(i);
+  i++;
+  if (i == 4) {
+    break/continue;
+  }
+/System.out.println(i);
+  i++;
+}
