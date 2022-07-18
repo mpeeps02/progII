@@ -3,16 +3,22 @@ KLASSEN UND OBJEKTE
 ===================================
 public class Main{
   public static void main(String[]args{
-    Hund hundObjekt = new Hund();
-    
+    Hund hundObjekt = new Hund(alter:2, art:"Dackel",kannPfoteGeben=true);//Konstruktur werte übergeben
+    System.out.println("Der Dackel ist"+ dackel.alter);
     hundObjekt.bellen();
     }} 
     aus 
    public class Hunf{
-    //Attribute
+    //Attribute durch Konstruktur gespaart
     int alter;
     String art;
     boolean kannPfoteGeben;
+    //Konstruktor
+    public Hund(int alter,String art,boolean kannPfotegeben){
+      this.alter=alter;
+      this.art=art;
+      this.kannPfotegeben=kannPfotegeben;
+    }
     //Methoden
     public void bellen{
     Systestem.out.println("Wuf");
