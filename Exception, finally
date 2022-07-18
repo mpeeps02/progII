@@ -68,3 +68,7 @@ public class exceptionsstuff {
 	 in Main schreiben:
 		 exceptionthrower exceptionthrower = new exceptionthrower();
 	 	 exceptionthrower.divide();
+		 try {
+			exceptionthrower.divide();
+		}catch (ArithmeticException exception) {
+			System.out.println(exception,getMessage());}
