@@ -1,0 +1,255 @@
+KLASSEN UND OBJEKTE
+-creating multiple objects in one class
+
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj1 = new Main();  // Object 1
+    Main myObj2 = new Main();  // Object 2
+    System.out.println(myObj1.x);
+    System.out.println(myObj2.x);
+  }
+}
+
+CLASS ATTRIBUTES
+public class Main{
+ int x = 5;
+ int y = 3;
+}
+
+ACCESSING ATTRIBUTES
+public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}
+MODIFY ATTRIBUTES
+public class Main {
+  int x;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 40;
+    System.out.println(myObj.x);
+  }
+}
+MULTIPLE ATTRIBUTES
+public class Main {
+  String fname = "John";
+  String lname = "Doe";
+  int age = 24;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+    System.out.println("Age: " + myObj.age);
+  }
+}
+
+ENUMS
+enum Level {
+  LOW,
+  MEDIUM,
+  HIGH
+}
+Level myVar = Level.MEDIUM;//access
+
+ENUM INSIDE A CLASS
+public class Main {
+  enum Level {
+    LOW,
+    MEDIUM,
+    HIGH
+  }
+
+  public static void main(String[] args) {
+    Level myVar = Level.MEDIUM; 
+    System.out.println(myVar);
+  }
+}
+LOOPING THROUGH AN ENUM
+for (Level myVar : Level.values()) {
+  System.out.println(myVar);
+}
+
+STATIC VS NON-STATIC
+-static: accessed without creating an object of the class
+-public: only access by objects
+
+public class Main {
+  // Static method
+  static void myStaticMethod() {
+    System.out.println("Static methods can be called without creating objects");
+  }
+
+  // Public method
+  public void myPublicMethod() {
+    System.out.println("Public methods must be called by creating objects");
+  }
+
+  // Main method
+  public static void main(String[] args) {
+    myStaticMethod(); // Call the static method
+    // myPublicMethod(); This would compile an error
+
+    Main myObj = new Main(); // Create an object of Main
+    myObj.myPublicMethod(); // Call the public method on the object
+  }
+}
+
+ACCESS METHODS WITH AN OBJECT
+public class Main {
+ 
+  // Create a fullThrottle() method
+  public void fullThrottle() {
+    System.out.println("The car is going as fast as it can!");
+  }
+
+  // Create a speed() method and add a parameter
+  public void speed(int maxSpeed) {
+    System.out.println("Max speed is: " + maxSpeed);
+  }
+
+  // Inside main, call the methods on the myCar object
+  public static void main(String[] args) {
+    Main myCar = new Main();   // Create a myCar object
+    myCar.fullThrottle();      // Call the fullThrottle() method
+    myCar.speed(200);          // Call the speed() method
+  }
+}
+
+// The car is going as fast as it can!
+// Max speed is: 200
+
+FINAL
+- this excludes the ability to override existing atrribute values
+public class Main {
+  final int x = 10;
+  final double PI = 3.14;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    myObj.x = 50; // will generate an error: cannot assign a value to a final variable
+    myObj.PI = 25; // will generate an error: cannot assign a value to a final variable
+    System.out.println(myObj.x);
+  }
+}
+
+ABSTRACT
+- class does not have a body, it is privided by the subclass
+// Code from filename: Main.java
+// abstract class
+abstract class Main {
+  public String fname = "John";
+  public int age = 24;
+  public abstract void study(); // abstract method
+}
+
+// Subclass (inherit from Main)
+class Student extends Main {
+  public int graduationYear = 2018;
+  public void study() { // the body of the abstract method is provided here
+    System.out.println("Studying all day long");
+  }
+}
+// End code from filename: Main.java
+
+// Code from filename: Second.java
+class Second {
+  public static void main(String[] args) {
+    // create an object of the Student class (which inherits attributes and methods from Main)
+    Student myObj = new Student();
+
+    System.out.println("Name: " + myObj.fname);
+    System.out.println("Age: " + myObj.age);
+    System.out.println("Graduation Year: " + myObj.graduationYear);
+    myObj.study(); // call abstract method
+  }
+}
+
+ABSTRACT CLASSES AND METHODS
+-abstract class or interface
+
+// Abstract class
+abstract class Animal {
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+// Subclass (inherit from Animal)
+class Pig extends Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+
+INTERFACE
+
+// Interface
+interface Animal {
+  public void animalSound(); // interface method (does not have a body)
+  public void sleep(); // interface method (does not have a body)
+}
+
+// Pig "implements" the Animal interface
+class Pig implements Animal {
+  public void animalSound() {
+    // The body of animalSound() is provided here
+    System.out.println("The pig says: wee wee");
+  }
+  public void sleep() {
+    // The body of sleep() is provided here
+    System.out.println("Zzz");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Pig myPig = new Pig();  // Create a Pig object
+    myPig.animalSound();
+    myPig.sleep();
+  }
+}
+
+MULTIPLE INTERFACES
+interface FirstInterface {
+  public void myMethod(); // interface method
+}
+
+interface SecondInterface {
+  public void myOtherMethod(); // interface method
+}
+
+class DemoClass implements FirstInterface, SecondInterface {
+  public void myMethod() {
+    System.out.println("Some text..");
+  }
+  public void myOtherMethod() {
+    System.out.println("Some other text...");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    DemoClass myObj = new DemoClass();
+    myObj.myMethod();
+    myObj.myOtherMethod();
+  }
+}
