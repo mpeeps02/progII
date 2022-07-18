@@ -20,3 +20,29 @@ class Car extends Vehicle {
     System.out.println(myCar.brand + " " + myCar.modelName);
   }
 }
+VORLESUNG BEISPIEL
+public class Fahrzeug {
+    PRIVATE int anzahlRaeder;
+    private String hersteller;
+    private float gewicht;
+    ...
+}
+public class Fahrrad EXTENDS Fahrzeug {
+  private int anzahlGaenge;
+  private Fahrradtyp fahrradtyp;
+  private String rahmenNr;
+  ...
+}
+public class Fahrrad extends Fahrzeug {
+...
+  public Fahrrad(int anzRaeder, String hersteller, float gewicht, int anzGaenge,
+    Fahrradtyp fahrradtyp, String rahmenNr) {
+    SUPER(anzRaeder, hersteller, gewicht);
+      this.anzahlGaenge=anzGaenge;
+      this.fahrradtyp=fahrradtyp;
+      this.rahmenNr=rahmenNr;
+  }
+
+
+
+
