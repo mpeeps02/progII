@@ -1,0 +1,159 @@
+public class notizen {
+	
+	
+	
+	//zufallszahl erzeugen 
+
+import java.util.Random; // Importanweisung um auf die Random Klasse zuzugreifen
+ 
+		public class ZufallsZahl {
+ 
+		public static void main(String[] args) {
+		Random zufall = new Random(); // neues Random Objekt, namens zufall
+ 
+		System.out.println(zufall.nextInt()); //Der Rückgabewert der Methode
+		// wird als Bildschirmanzeige
+		// ausgegeben
+}
+}
+
+//Zufallszahl speichern
+
+		import java.util.Random; // Importanweisung um auf die Random Klasse zuzugreifen
+ 
+		public class ZufallsZahl {
+ 
+			public static void main(String[] args) {
+				Random zufall = new Random(); // neues Random Objekt, namens zufall
+				int zufallsZahl=zufall.nextInt(); //Speichert die Methodenrückgabe in der Variablen
+ 
+				System.out.println(zufallsZahl); //Ausgabe des Wertes der Variablen
+			}
+		}
+	
+	
+	
+	
+	
+	switch (enummethode){
+	case FRÜHLING:
+	      System.out.println("Frühling:)");
+	      break;
+	 case SOMMER:
+	....
+
+	//rechnungen  
+	int x = 5;
+	int y = 10;
+	System.out.println(x+y)
+
+//	Dividieren:
+	System.out.println(10/5)
+
+	//Länge eines Strings ausgeben
+
+	String txt= "Hello";
+	System.out.println(txt.length());
+
+	//Ausgabe von zwei Strings
+	System.out.println(name+lastname)
+
+	//Return the index (position) of the first occurrence of "i" in the following string:
+
+
+	String txt = "Hello Everybody";
+	System.out.println(txt. Indexof ("i"));
+
+
+	((Gleichheit ==
+
+	//Switch case
+	int day = 2;
+	switch (day) {
+	  case 1:
+	    System.out.println("Saturday");
+	    break;
+	  case 2:
+	    System.out.println("Sunday");
+	    break;
+	}
+
+	//Solange i kleiner ist als sechs gebe aus:
+	int i = 1;
+	while (i<6) {
+	  System.out.println(i);
+	  i++;
+	}
+
+
+	//Use a for loop to print "Yes" 5 times:
+
+	for (int i=0; i< 5; i++){
+	 System.out.println("Yes");
+	}
+
+	//Array
+	String[ ]cars ={"Volvo", "BMW", "Ford"};
+	for (String i : cars) {
+	    System.out.println(i);
+	}
+
+	String[ ] cars = {"Volvo", "BMW", "Ford"};
+	System.out.println(cars[1]);
+
+	//Länge eines Arrays cars ausgeben
+	String[ ] cars = { "Volvo", "BMW", "Ford"};
+	System.out.println(cars.length);
+
+
+//	Methode erstellen und ausgeben
+	static void myMethod(){
+	 System.out.println("I just got executed");
+
+	public static void main(String []args) {
+	  myMethod();
+	}
+
+
+	static void myMethod( String fname){
+	 System.out.println(fname + "Doe");
+	}
+
+	public static void main(String []args) {
+	  myMethod("John");
+	}
+
+	Objekt namens myObj kreieren in der Klasse MyClass
+	MyClass myObj=new MyClass();
+
+
+	final vererbung an andere Klassen
+	extends (Vererbt attribute und methoden von Oberklasse)
+	class Car extends Vehicle
+
+
+
+//	util ergänzung  -- clear console 
+
+
+	public static void clearConsole(){
+	        try{
+	            String operatingSystem = System.getProperty("os.name"); //Check the current operating system
+	              
+	            if(operatingSystem.contains("Windows")){        
+	                ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "cls");
+	                Process startProcess = pb.inheritIO().start();
+	                startProcess.waitFor();
+	            } else {
+	                ProcessBuilder pb = new ProcessBuilder("clear");
+	                Process startProcess = pb.inheritIO().start();
+
+	                startProcess.waitFor();
+	            } 
+	        }catch(Exception e){
+	            System.out.println(e);
+	        }
+		}
+
+
+}
