@@ -90,3 +90,17 @@ public class Main {
     }
   }
 }
+VORLESUNG BEISPIEL
+public class ArrayListMain1 {
+	public static void main(String[] args) {
+		ArrayList<Integer> integerListe = new ArrayList<Integer>();
+	for(int i=0; i<10; i++) {
+		Integer zufallszahl = (int)Math.round(Math.random()*100);
+		integerListe.add(zufallszahl);
+	}
+	for(int i=0; i<10; i++) {
+		System.out.println("Pos. "+i+": "+integerListe.get(i));
+		}
+	}
+}
+
