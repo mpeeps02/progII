@@ -26,3 +26,45 @@ public class Main {
     }
   }
 }
+VORLESUNG BEISPIEL
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class exceptionsstuff {
+	
+	public static void main(String[] args) {
+		//exception Fehler welcher 
+		//waehrend laufzeit eines Programm auftritt:)
+		Scanner scanner = new Scanner(System.in);
+		try {
+			int number = scanner.nextInt();
+			System.out.println(number);
+			
+		}catch (InputMismatchException exception) {
+			System.out.println("Das war ein falscher Wert");
+		} finally { //wird immer ausgefuehrt
+			scanner.close();
+			System.out.println("Scanner geschlossen");
+			
+		}
+		
+		
+}
+	
+	public class exceptionthrower{
+		public void divide() {
+			Scanner scan = new Scanner(System.in)
+			System.out.println("Bitte geben Sie eine Zahl ein: ");
+		    int number = scan.nextInt();
+		    
+		    if (number==0) {
+		    	throw new ArithmeticException("Nicht durch 0 teilen!");
+		    }
+		    
+		    System.out.println(10/number);
+		    
+		}
+	}
+	 in Main schreiben:
+		 exceptionthrower exceptionthrower = new exceptionthrower();
+	 	 exceptionthrower.divide();
