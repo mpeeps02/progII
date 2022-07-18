@@ -16,3 +16,18 @@ public class Person {
 - get returns value of name
 - set takes newName and assigns it to name
 - this: refer to the current object
+
+VORLESUNG BEISPIEL
+public class GetterSetterDemoClass {
+  private int einIntAttribut;
+  
+  public GetterSetterDemoClass(int value) {
+    einIntAttribut = value;
+  }
+  public int getEinIntAttribut() {
+    return einIntAttribut;
+  }
+  public void setEinIntAttribut(int einIntAttribut) {
+    this.einIntAttribut = einIntAttribut;
+  }
+}
