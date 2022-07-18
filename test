@@ -1,0 +1,37 @@
+//interfaces 
+public interface testI {
+	//methoden
+	void dialog(); 
+	void quatschen();
+}
+===================================
+public class test implements testI {
+ public void dialog(){
+	 System.out.println("Hallo");
+ }
+@Override
+public void quatschen() {
+// TODO Auto-generated method stub
+			
+	}
+}
+=================================
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class JUnit_Test {
+
+	@Test
+	public void test() {
+		HelperClass h = new HelperClass();
+		assertTrue("i ungleich 5", h.i == 5);
+		//assertFalse()
+		//assertEquals(5, h.i);
+		//fail("Not yet implemented");
+	}
+
+}
+	public class HelperClass{
+		int i = 5;
+		String j = "4";
+	}
