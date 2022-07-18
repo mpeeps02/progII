@@ -11,6 +11,31 @@ public class Main {
     System.out.println(myObj2.x);
   }
 }
+BEISPIEL VORLESUNG
+
+public class Arbeitskraft {
+    private String personalnr;
+    private String name;
+    private int gehalt;
+    private String abteilung;
+  public Arbeitskraft(String nr, String name, int gehalt) {
+      this.personalnr=nr;
+      this.name=name;
+      this.gehalt=gehalt;
+}
+public void erhoeheGehalt(int gehaltserhoehung) {
+  this.gehalt = this.gehalt+gehaltserhoehung;
+}
+public void versetzeInAbteilung(String neueAbteilung) {
+  this.abteilung=neueAbteilung;
+}
+public String druckeAusweis() {
+  String ausgabeString = this.personalnr + ", "+this.name+", "+this.abteilung;
+  return ausgabeString;
+}
+}
+
+
 
 CLASS ATTRIBUTES
 public class Main{
