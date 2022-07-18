@@ -18,8 +18,18 @@ public class Main {
     capitalCities.put("Germany", "Berlin");
     capitalCities.put("Norway", "Oslo");
     capitalCities.put("USA", "Washington DC");
+    
+    //in einer Liste speichern
+    List <String> capitalCities = new Arraylist();
+    capiatlCities.addAll(capiatalCities.keySet);
+    
     System.out.println(capitalCities);
   }
+}
+Ausgabe: https://www.youtube.com/watch?v=sNrT2hbilsk
+Set<String> keySet=capitalCities.keySet();
+for (String s: keySet){
+  System.out.println("Das Land" + s + "hat die Hauptstadt" + capitalCities.get(s));
 }
 
 ACCESS AN ITEM
