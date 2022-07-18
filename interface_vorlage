@@ -1,0 +1,27 @@
+public class interfaces_zsmfsg {
+//allgemein spezielle Art der Java Klasse 
+//	nur Megthodenkoepfe und Konstanten werden programmiert
+//ermöglicht Übernahme verschiedenerer Methoden in verschiedene Klassen
+//ermoeglicht mehrfachvererbung
+	//immer abstract
+	public interface X{
+		///public static final
+		//Konstanten
+		public boolean b = true;
+		//Methodenkopf
+		public abstract void addition();
+		//--> rest dort wo methode implementiert wird class zahl
+	}
+	//////////////////////////////////////////
+	public class Zahl implements X{
+		private int a;
+		private int b;
+		
+		public void addition() {
+			System.out.println("du fuehrst eine addiiton aus");
+		}
+		}
+	}
+	
+
+}
