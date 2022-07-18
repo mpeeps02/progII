@@ -1,6 +1,13 @@
 ARRAYS
 String [] cars = {"BMW","Volvo"};
 
+int [] numbers = new int[1000];
+for (int i=0; i < numbers.lenght; i++){
+   numbers[i]= i+1;}
+   for (int i=0; i < numbers.lenght; i++){
+   System.out.println(numbers[i]);
+}
+
 ACCES ELEMENTS OF AN ARRAY
 String [] cars = {"BMW","Volvo"};
 cars[1]="Opel";//change an array element
