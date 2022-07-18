@@ -1,6 +1,23 @@
 KLASSEN UND OBJEKTE
 -creating multiple objects in one class
-
+===================================
+public class Main{
+  public static void main(String[]args{
+    Hund hundObjekt = new Hund();
+    
+    hundObjekt.bellen();
+    }} 
+    aus 
+   public class Hunf{
+    //Attribute
+    int alter;
+    String art;
+    boolean kannPfoteGeben;
+    //Methoden
+    public void bellen{
+    Systestem.out.println("Wuf");
+   }
+===================================
 public class Main {
   int x = 5;
 
