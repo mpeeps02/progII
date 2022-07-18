@@ -1,0 +1,41 @@
+public class command_pattern {
+package Klausurvorbereitung.kappa;
+
+import java.util.List;
+
+public interface Command{
+//ermoeglicht die Kapselung zu einem anderen Objekt
+//aufruf kapseln
+	public String menuItemName();
+	
+	public void execute(ApplicationContext context);
+	
+	
+}
+
+public class CommandAnfordern implements Command{
+	
+	@Override 
+	public String menuItemName() {
+		return "---";
+	}
+	@Override 
+	public void execute(ApplicationContext context){
+	//Implementierung der konkreten Ausfuehrung
+	}	
+	
+	public class Menu{
+		private String menuName;
+		private String backButtonName;
+		//Liste von möglichen Commands im Menü
+		List<Command> menuItems = new ArrayList<Command>();
+		ApplicationContext appContext;
+		
+
+	public void setCommand(Command commmand) {
+		if(command!=null) {
+			menuItems.add(command);
+		}
+	}
+}
+}
