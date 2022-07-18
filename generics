@@ -1,0 +1,46 @@
+public class generics {
+	public static main(String[] args) {
+			List<Integer> liste = new ArrayList<>();
+			
+		}
+		//gehoert in main
+		double[] doubleArray= {2.2, 3.4, 3.4};
+		auslesen(doubleArray);
+		
+}
+ public static void auslesen(double[] doubleArray) {
+	 for (double zahl: doubleArray) {
+		 System.out.println(zahl);
+	 }
+ }
+//Stattdessen generics nutzen weil guter codingstyle
+ Integer[] intArray= {1,2,3,4};
+ Double[] doubleArray= {0.2, 4.5, 3,.7};
+ Character[] charArray= {'J', 'K'};
+ auslesen(charArray);
+ }
+public static <Type> void auslesen(Type[] typeArray) {
+	for (Type t: typeArray) {
+		//System.out.println(t.getClass());
+	}
+//ich möchte mich bei einer Klasse nicht auf einen Datentypen festlegen
+	
+	public class Genclass <T>{
+		T objekt;
+		
+		public T getObjekt() {
+			return objekt;
+		}
+		
+		public void setobjekt(T neuesObjekt) {
+			this.objekt = neuesObjekt;
+		}
+		
+		//in main dann Objekte erstellen
+		Genclass<Double> generic = new Genclass();
+		generic.setobjekt(15.3);
+		System.out.println(generic.getobjekt);
+		//System.out.println(generic.getobjekt().getClass()) gibt klasse aus
+	}
+}
+}
