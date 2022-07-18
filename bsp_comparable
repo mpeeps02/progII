@@ -1,0 +1,99 @@
+//allgemein comparable vergleicht
+
+import java.util.List;
+
+Bsp ich erstelle zwei tiere in der main mit arraylist
+moechte die vergleichen ueber mehrere objekte
+Arraylist nach namen sortieren
+
+	in Tier klasse interface comparable<Tiere>;
+	compareTo methode
+
+		in main
+		for (Tier tier _ list) {
+			System.out.println(tier.getName));
+		}
+	System.out.println("______");
+	Collections.sort(list);
+
+
+
+@SuppressWarnings("rawtypes")
+
+	public class car_comparable  implements Comparable<car_comparable>{
+	private String name;
+	private int id;
+	
+	public car_comparable( String name, int id) {
+		this.name=name;
+		this.id=id;
+	}
+	public int getid(){
+		return this.id;
+	}
+	@Override
+	public int compareTo(car_comparable o) {
+		// TODO Auto-generated method stub
+		if(this.getid() == o.getid()) return 0;
+		else if(this.getid() > o.getid()) return 1;
+		else return -1; 
+	}
+}
+
+
+
+	Beispiel aus Folien:
+	
+//integer
+	Integer x =4;
+	Integer y = 7;
+	Integer z = 7;
+	
+	//es sollen die Ergebnisse verglichen werden 
+	
+	int compareErgebnis1 = x.compareTo(y);
+	int compareErgebnis2 = y.compareTo(x);
+	int compareErgebnis3 = y.compareTo(z);
+	
+	System.out.println("x.compareTo(y) : "+compareErgebnis1);
+	System.out.println("y.compareTo(x) : "+compareErgebnis2);
+	System.out.println("y.compareTo(z) : "+compareErgebnis3);
+	
+	//Studentenidsortieren
+	
+	public class Student implements Comparable<Student>{
+	private int id;
+	private String name;
+	
+	public Student(int id, String name) {
+		this.id=id;
+		this.name=name;
+		
+	}
+	
+	@Override 
+	public int compareTo(Student student) {
+		if(this.id==student.id) {
+			return 0;
+		} else if(this.id>student.id) {
+			return 1;
+		} else {
+			return -1;
+		}
+	}
+		}
+	}
+}
+
+//Arraylist sortieren nach ID
+
+	List<Student> studentList = new ArrayList<Student>();
+
+	studentList.add(new Student(100, "Miller"));
+	studentList.add(new Student (23, "Smith"));
+	studentList.add(new Student(67, "Brooks"));
+
+	for (int i=0; i< studentList.size(); i++) {
+		System.out.println(studentList.get(i).getId()) + ":"+studentList.get(i)getName());
+	}
+	
