@@ -37,11 +37,12 @@ interface Animal {
 }
 
 // Pig "implements" the Animal interface
-class Pig implements Animal {
+class Pig IMPLEMENTS Animal {
   public void animalSound() {
     // The body of animalSound() is provided here
     System.out.println("The pig says: wee wee");
   }
+  @Ovveride
   public void sleep() {
     // The body of sleep() is provided here
     System.out.println("Zzz");
