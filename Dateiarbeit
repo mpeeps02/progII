@@ -19,7 +19,7 @@ String sepStringSys = System.getProperty("file.separator");
 public class textdateieneinlesen {
 	//in main 
 	public static void main(String[] args) {
-		File datei = new File("/unterordner/datei.txt");
+		File datei = new File("/unterordner/datei.txt");//auf .txt eigenschaften gehen und Pfad bekommen,backslash in slash ändern 
 		//Ueberpruefen ob Pfad richtig ist
 		//System.out.println(datei.isFile());
 		//Folie: boolean dateiExists = datei.exists();
@@ -28,7 +28,7 @@ public class textdateieneinlesen {
 		//falls vorhanden nur letztes verzeichnis erstellen: boolean mkDirOk = tiefesverzeichnis.mkdir();
 		//falls meheerere auch uebergeordnete erstellen: boolean mkDirsOk = tiefesVerzeichnis.mkdirs();
 		
-		
+		//Datei einlesen
 		Scanner scan;
 		try {
 			scan = new Scanner(datei);
@@ -57,8 +57,8 @@ public class textdateieneinlesen {
 				try {
 					FileWriter schreiben = new FileWriter(datei, true); //Erstellt Datei und hängt neue Speicherugn dran
 					//ohne true wird komplett ueberschrieben
-					schreiben.write("Hello\n"); //in die Datei wird hello geschrieben
-					schreiben.flush();//einschreiben
+					schreiben.write("Hello\n"); //in die Datei wird hello geschrieben //writer.write
+					schreiben.flush();//einschreiben                                  //writer.close
 					schreiben.close();
 				} catch (IOException e) {
 					System.out.println("Datei konnte nicht bearbeitet werden");
