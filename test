@@ -16,6 +16,50 @@ public void quatschen() {
 	}
 }
 =================================
+public class Calculation {
+	private ResultRepositoryrepository;
+	
+	public Calculation(ResultRepositoryrepository) {
+		this.repository=repository;
+	}
+	public int addition(inta, intb) {
+		intresult=a+b;
+		repository.save(result);
+		returnresult;
+}
+	public int multiplikation(inta, intb) {
+		intresult=a*b;
+		repository.save(result);
+		returnresult;
+	}
+}
+
+public interface ResultRepository {
+	public void save(Integer intResult);
+	}
+	
+	
+public class InMemoryResultRepository implements ResultRepository {
+	private List<Integer> resultArrayListInt= newArrayList<Integer>();
+	@Override
+	public void save(Integer intResult) {
+		resultArrayListInt.add(intResult);
+	}
+	publicList<Integer> getIntResults() {
+		returnresultArrayListInt;}
+	}
+	Main Methode implementieren:
+	//Testergebnis bewerten
+if(!testRepositoryInMemory.getIntResults().contains((Integer)addResultTarget)) {
+System.out.println("Fehler in Repository. Ergebnis "+addResultTarget+" ist nicht in Repository enthalten.");
+} else{System.out.println("Repository ok");
+}
+und
+if(addResult!=addResultTarget) 
+{System.out.println("Fehler calc.addition. Soll: "+addResultTarget+",tatsächlicher Wert "+addResult);
+} else{System.out.println("calc.additionok");
+}
+===================================
 import static org.junit.Assert.*;
 import org.junit.Test;
 
