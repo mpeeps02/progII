@@ -31,6 +31,8 @@ public class textdateieneinlesen {
 		//Folie: boolean dateiExists = datei.exists();
 		//Länge der Datei ermitteln: long fileSite = datei.lenght();
 		
+		file.getPath oder file.getAbsolutPath //für Pfade der Datei
+		
 		//falls vorhanden nur letztes verzeichnis erstellen: boolean mkDirOk = tiefesverzeichnis.mkdir();
 		//falls meheerere auch uebergeordnete erstellen: boolean mkDirsOk = tiefesVerzeichnis.mkdirs();
 		
