@@ -17,14 +17,20 @@ String sepStringSys = System.getProperty("file.separator");
 
 
 public class textdateieneinlesen {
-	//in main 
+ 
 	public static void main(String[] args) {
-		File datei = new File("/unterordner/datei.txt");//auf .txt eigenschaften gehen und Pfad bekommen,backslash in slash ändern 
+	
+		File datei = new File("/unterordner/datei.txt");
+		
+		
+		//auf .txt eigenschaften gehen und Pfad bekommen,backslash in slash ändern 
 		//Ueberpruefen ob Pfad richtig ist
-		//System.out.println(datei.isFile());
+		
+		System.out.println(datei.isFile());
+		
 		//Folie: boolean dateiExists = datei.exists();
 		//Länge der Datei ermitteln: long fileSite = datei.lenght();
-		//Instanz muss nicht physisch vorhanden sein: File tiefesVerzeichnis = new File...
+		
 		//falls vorhanden nur letztes verzeichnis erstellen: boolean mkDirOk = tiefesverzeichnis.mkdir();
 		//falls meheerere auch uebergeordnete erstellen: boolean mkDirsOk = tiefesVerzeichnis.mkdirs();
 		
