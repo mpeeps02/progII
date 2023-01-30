@@ -1,0 +1,27 @@
+public class Fahrzeug implements Comparable<Fahrzeug> {
+ 
+		public int id;
+		public double gewicht;
+		public String beschreibung;
+		
+		public Fahrzeug(int id, double gewicht, String beschreibung) {
+		this.id=id;
+		this.gewicht=gewicht;
+		this.beschreibung=beschreibung;
+		}
+		public String toString() {
+			return "["+ id +", " + gewicht +", "  + beschreibung +"]";
+		}
+		@Override
+		public int compareTo (Fahrzeug fahrzeug) {
+			if(gewicht == fahrzeug.gewicht) {
+				return 0;
+			}else if (gewicht > fahrzeug.gewicht) {
+				return 1;
+				
+			}else {
+				return -1;
+			
+		}
+		}
+}

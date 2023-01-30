@@ -1,0 +1,27 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+public class JUnitTest_KlasseMitFunktion {
+
+	@Test
+	void testBuchstabeVoranstellen() {
+		//Test 1: Testen, ob Funktion die Buchstaben am Anfang des String addiert
+		  String testString = "test";
+	        String expectedString = "a" + testString;
+	        String resultString = KlasseMitFunktion.buchstabeVoranstellen(testString, "a");
+	        assertEquals(expectedString, resultString);
+	        // Test 2: Teste, ob Funktion den Original String zurück gibt, wenn Buchstabe leer ist 
+	        testString = "test";
+	        expectedString = testString;
+	        resultString = KlasseMitFunktion.buchstabeVoranstellen(testString, "");
+	        assertEquals(expectedString, resultString);
+
+	        // Test 3: Teste, ob Funktion den Original String zurück gibt, wenn String leer ist 
+	        testString = "";
+	        expectedString = "a";
+	        resultString = KlasseMitFunktion.buchstabeVoranstellen(testString, "a");
+	        assertEquals(expectedString, resultString);
+	}
+
+}
