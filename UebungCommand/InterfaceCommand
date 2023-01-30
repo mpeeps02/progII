@@ -1,0 +1,22 @@
+interface Command {
+    void execute();
+}
+
+class Light {
+    void turnOn() {
+        System.out.println("The light is on");
+    }
+}
+
+class TurnOnLightCommand implements Command {
+    private Light light;
+ 
+    public TurnOnLightCommand(Light light) {
+        this.light = light;
+    }
+ 
+    @Override
+    public void execute() {
+        light.turnOn();
+    }
+}

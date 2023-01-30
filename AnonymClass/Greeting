@@ -1,0 +1,8 @@
+public interface Greeting {
+public static void greet() {
+		
+	}
+	public static void greetSomeone(String someone) {
+		System.out.println("hey girl");
+	}
+}

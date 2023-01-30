@@ -1,0 +1,74 @@
+import java.util.ArrayList;
+public class array {
+	public static void main(String []args) {
+		/*array
+		 * String [] animals = {"dog","cat","cow"};
+		
+		animals[2]="wolf";
+		System.out.println(animals[2]);
+		
+		for(int i=0;i<animals.length;i++) {
+			System.out.println(animals[i]);
+			
+		}
+		*/
+		/* 2D array
+		*
+		String [][]animals= {{"cat","dog"},{"snake","cow"}};
+		for(int i=0;i<animals.length;i++) {
+			System.out.println();
+			for(int j=0;j<animals.length;j++) {
+				System.out.println(animals[i][j]+"");
+			}
+		}
+		*/
+		//arraylist
+		//Liste1
+		/*ArrayList<String>food=new ArrayList<String>();
+		food.add("soup");
+		food.add("graps");
+		
+		food.set(0,"sushi");
+		
+		for (int i=0;i<food.size();i++) {
+			System.out.println(food.get(i));
+		}
+		*/
+		
+		//2D arraylist
+		//Liste2
+		/*ArrayList<String> drinks= new ArrayList<String>();
+		drinks.add("coffee");
+		drinks.add("cola");
+		
+		food.set(1,"cz");
+		System.out.println(drinks);
+		
+		//2D Liste erstellen
+		ArrayList<ArrayList<String>> fridge = new ArrayList();
+		fridge.add(drinks);
+		fridge.add(food);
+		
+		System.out.println(fridge);
+		//einzelne Elemente
+		System.out.println(fridge.get(1).get(0));
+		*/
+		
+		//for each loop
+		/*String[]animals= {"cat","dog","brid"};
+		for (String i:animals) {
+			System.out.println(i);
+		}
+		*/
+		
+		//for each loop arraylist
+		ArrayList<String>animals=new ArrayList();
+		animals.add("cat");
+		animals.add("dog");
+		animals.add("cow");
+		
+		for (String i:animals) {
+			System.out.println(i);
+		}
+}
+}
