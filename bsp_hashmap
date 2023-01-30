@@ -8,13 +8,14 @@ import java.util.Set;
 public class hauptfürhashmap { //eigentlich in Main
 	//JEDER KEY MUSS EINZIGEARTIG SEIN
 	public static void main(String[] args) {
-		Map<Integer,String> plz= new HashMap<>();
+		HashMap<Integer,String> plz= new HashMap<>();
 		plz.put(1009, "Dresden");
 		plz.put(70372, "Stuttgart");
 		//Map<Boolean, int> map = Map.of();
 		//map.put("true", 12);
 		//(Key, Value)
-		
+		System.out.println(plz.get("Dresden"));
+		System.out.println(plz.containsKey(1009)) //gibt an, ob existiert
 		//plz.remove(70372);
 		//plz.containsKey(70372); //gucken ob enthalten
 		//plz.replace(1009, "Stutt"); /aendern
