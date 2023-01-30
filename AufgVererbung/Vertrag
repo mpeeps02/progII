@@ -1,0 +1,14 @@
+public abstract  class Vertrag {
+	
+protected	int abschlussjahr;
+	
+protected	int gueltigDatum;
+protected	int anzahlVertragsseiten;
+		
+  protected Vertrag(int abschlussjahr,int gueltigDatum,int anzahlVertragsseiten){
+			this.abschlussjahr=abschlussjahr;
+			this.anzahlVertragsseiten=anzahlVertragsseiten;
+			this.gueltigDatum=gueltigDatum;
+		}
+	}
+

@@ -1,0 +1,35 @@
+public class Leasingvertrag extends Vertrag{
+
+private		String nameLeasinganbieter;
+private		String vornameLeasinganbieter;
+private		String unternehmenLeasing;
+		
+public	Leasingvertrag(int abschlussjahr,int gueltigDatum,int anzahlVertragsseiten,String nameLeasinganbieter,String vornameLeasinganbieter,String unternehmenLeasing){
+			super(abschlussjahr,gueltigDatum,anzahlVertragsseiten);
+			this.nameLeasinganbieter=nameLeasinganbieter;
+			this.vornameLeasinganbieter=vornameLeasinganbieter;
+			this.unternehmenLeasing=unternehmenLeasing;
+		}
+	@Override
+public String toString() {
+	return "Leasingvertrag [nameLeasinganbieter=" + nameLeasinganbieter + ", vornameLeasinganbieter="
+			+ vornameLeasinganbieter + ", unternehmenLeasing=" + unternehmenLeasing + "]";
+}
+	public String getnameLeasinganbieter() {
+		return nameLeasinganbieter;
+	}
+	public void setnameLeasinganbieter(String nameLeasinganbieter) {
+		this.nameLeasinganbieter=nameLeasinganbieter;
+	}
+	public String getvornameLeasinganbieter() {
+		return vornameLeasinganbieter;
+	}
+	public void setvornameLeasinganbieter(String vornameLeasinganbieter) {
+		this.vornameLeasinganbieter=vornameLeasinganbieter;
+	}
+	
+	public String getunternehmenLeasing() {
+		return unternehmenLeasing;
+	}
+}
+

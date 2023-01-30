@@ -1,0 +1,13 @@
+public class vertragHauptanwendung{
+	public static void main(String []args) {
+		
+		Leasingvertrag leasingvertrag = new Leasingvertrag(2020,2023,10,"Max","Mustermann","GmbH");
+		
+
+		
+		
+		System.out.println(leasingvertrag.getnameLeasinganbieter());
+		leasingvertrag.setnameLeasinganbieter("Paul");
+		System.out.println(leasingvertrag.getnameLeasinganbieter());
+	}
+}

@@ -1,0 +1,53 @@
+public class Kaufvertrag extends Vertrag{
+	
+	String nameKaeufer;
+	String vornameKaeufer;
+	
+	String nameVerkaeufer;
+	String vornameVerkaeufer;
+	
+	Kaufvertrag(String nameKaeufer,String vornameKaeufer,String nameVerkaeufer,String vornameVerkaeufer,int abschlussjahr,int gueltigDatum,int anzahlVertragsseiten){
+		super(abschlussjahr, gueltigDatum,anzahlVertragsseiten);
+		this.nameKaeufer=nameKaeufer;
+		this.vornameKaeufer=vornameKaeufer;
+		this.nameVerkaeufer=nameVerkaeufer;
+		this.vornameVerkaeufer=vornameVerkaeufer;
+		
+	}
+
+	public String getNameKaeufer() {
+		return nameKaeufer;
+	}
+
+	public void setNameKaeufer(String nameKaeufer) {
+		this.nameKaeufer = nameKaeufer;
+	}
+
+	public String getVornameKaeufer() {
+		return vornameKaeufer;
+	}
+
+	public void setVornameKaeufer(String vornameKaeufer) {
+		this.vornameKaeufer = vornameKaeufer;
+	}
+
+	public String getNameVerkaeufer() {
+		return nameVerkaeufer;
+	}
+
+	public void setNameVerkaeufer(String nameVerkaeufer) {
+		this.nameVerkaeufer = nameVerkaeufer;
+	}
+
+	public String getVornameVerkaeufer() {
+		return vornameVerkaeufer;
+	}
+
+	public void setVornameVerkaeufer(String vornameVerkaeufer) {
+		this.vornameVerkaeufer = vornameVerkaeufer;
+	}
+	
+
+	
+
+}

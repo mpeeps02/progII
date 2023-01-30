@@ -1,0 +1,83 @@
+public class Mietvertrag extends Vertrag {
+	
+	String nameMieter;
+	String vornameMieter;
+	
+	String nameVermieter;
+	String vornameVermieter;
+	
+	
+	public String getNameMieter() {
+		return nameMieter;
+	}
+
+	public void setNameMieter(String nameMieter) {
+		this.nameMieter = nameMieter;
+	}
+
+	public String getVornameMieter() {
+		return vornameMieter;
+	}
+
+	public void setVornameMieter(String vornameMieter) {
+		this.vornameMieter = vornameMieter;
+	}
+
+	public String getNameVermieter() {
+		return nameVermieter;
+	}
+
+	public void setNameVermieter(String nameVermieter) {
+		this.nameVermieter = nameVermieter;
+	}
+
+	public String getVornameVermieter() {
+		return vornameVermieter;
+	}
+
+	public void setVornameVermieter(String vornameVermieter) {
+		this.vornameVermieter = vornameVermieter;
+	}
+
+	public String getUnternehmenVermieter() {
+		return unternehmenVermieter;
+	}
+
+	public void setUnternehmenVermieter(String unternehmenVermieter) {
+		this.unternehmenVermieter = unternehmenVermieter;
+	}
+
+	public double getKaltmiete() {
+		return kaltmiete;
+	}
+
+	public void setKaltmiete(double kaltmiete) {
+		this.kaltmiete = kaltmiete;
+	}
+
+	String unternehmenVermieter;
+	
+	double kaltmiete;
+	
+	 Mietvertrag(String nameMieter,String vornameMieter,
+			 	String nameVermieter,String vornameVermieter,
+			 	String unternehmenVermieter,double kaltmiete,int abschlussjahr,int gueltigDatum,int anzahlVertragsseiten){
+		 super(abschlussjahr,gueltigDatum,anzahlVertragsseiten);
+		this.vornameMieter=vornameMieter;
+		this.nameMieter=nameMieter;
+		
+		this.vornameVermieter=vornameVermieter;
+		this.unternehmenVermieter=unternehmenVermieter;
+		this.nameVermieter=nameVermieter;
+		
+		this.kaltmiete=kaltmiete;
+		
+	}
+	 
+	 
+			
+			
+	
+	
+	
+}
