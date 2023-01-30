@@ -74,8 +74,8 @@ public class hauptfürhashmap { //eigentlich in Main
 	Zahlen[1] = 3;
 	
 	
-	//ne kleine Einkaufsliste in der ich dinge speichern möchet 
-	
+	//Einkaufsliste in der ich dinge speichern möchet 
+=======================================================================	
 	public static void main(String[] args) {
 		List<String> einkaufsliste = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in); //einlesen

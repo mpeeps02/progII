@@ -7,6 +7,9 @@ for (int i=0; i < numbers.lenght; i++){
    for (int i=0; i < numbers.lenght; i++){
    System.out.println(numbers[i]);
 }
+
+System.out.println(cars.length);
+
 =================================================
 ACCES ELEMENTS OF AN ARRAY
 String [] cars = {"BMW","Volvo"};
