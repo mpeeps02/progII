@@ -1,47 +1,4 @@
 //allgemein comparable vergleicht
-
-import java.util.List;
-
-Bsp ich erstelle zwei tiere in der main mit arraylist
-moechte die vergleichen ueber mehrere objekte
-Arraylist nach namen sortieren
-
-	in Tier klasse interface comparable<Tiere>;
-	compareTo methode
-
-		in main
-		for (Tier tier _ list) {
-			System.out.println(tier.getName));
-		}
-	System.out.println("______");
-	Collections.sort(list);
-
-
-
-@SuppressWarnings("rawtypes")
-
-	public class car_comparable  implements Comparable<car_comparable>{
-	private String name;
-	private int id;
-	
-	public car_comparable( String name, int id) {
-		this.name=name;
-		this.id=id;
-	}
-	public int getid(){
-		return this.id;
-	}
-	@Override
-	public int compareTo(car_comparable o) {
-		// TODO Auto-generated method stub
-		if(this.getid() == o.getid()) return 0;
-		else if(this.getid() > o.getid()) return 1;
-		else return -1; 
-	}
-}
-
-
-
 	Beispiel aus Folien:
 	
 //integer
@@ -70,7 +27,7 @@ Arraylist nach namen sortieren
 		this.name=name;
 		
 	}
-	
+==========================================================
 	@Override 
 	public int compareTo(Student student) {
 		if(this.id==student.id) {
@@ -84,7 +41,7 @@ Arraylist nach namen sortieren
 		}
 	}
 }
-
+===========================================================
 //Arraylist sortieren nach ID
 
 	List<Student> studentList = new ArrayList<Student>();

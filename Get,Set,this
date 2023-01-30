@@ -4,19 +4,21 @@ GET AND SET/THIS
 public class Person {
   private String name; // private = restricted access
 
-  // Getter
+  !!!!!!!// Getter
   public String getName() {
     return name;
   }
 
-  // Setter
+  !!!!!!!!!!// Setter
   public void setName(String newName) {
     this.name = newName;
   }
+
+====================================================
 - get returns value of name
 - set takes newName and assigns it to name
 - this: refer to the current object
-
+================================================================
 VORLESUNG BEISPIEL
 public class GetterSetterDemoClass {
   private int einIntAttribut;

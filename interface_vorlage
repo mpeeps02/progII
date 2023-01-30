@@ -1,12 +1,10 @@
 public class interfaces_zsmfsg {
 //allgemein spezielle Art der Java Klasse 
-//	nur Megthodenkoepfe und Konstanten werden programmiert
+//	nur Megthodenkoepfe und Konstanten werden festgelegt
 //ermöglicht Übernahme verschiedenerer Methoden in verschiedene Klassen
 //ermoeglicht mehrfachvererbung
 	//immer abstract
 	public interface X{
-		///public static final
-		//Konstanten
 		public boolean b = true;
 		//Methodenkopf
 		public abstract void addition();
@@ -16,14 +14,12 @@ public class interfaces_zsmfsg {
 	public class Zahl implements X{
 		private int a;
 		private int b;
-		
+
 		public void addition() {
 			System.out.println("du fuehrst eine addiiton aus");
 		}
 		}
 	}
-	
-
 }
 
 ==================================================
@@ -56,7 +52,37 @@ class Main {
     myPig.sleep();
   }
 }
-
+=======================================================
+COMPARE TO INTERFACE
+public class Fahrzeug implements Comparable<Fahrzeug> {
+ 
+  public int id;
+  public double gewicht;
+  public String beschreibung;
+  
+  public Fahrzeug(int id, double gewicht, String beschreibung) {
+  this.id=id;
+  this.gewicht=gewicht;
+  this.beschreibung=beschreibung;
+  }
+  public String toString() {
+    return "["+ id +", " + gewicht +", "  + beschreibung +"]";
+  }
+  @Override
+  public int compareTo (Fahrzeug fahrzeug) {
+    if(gewicht == fahrzeug.gewicht) {
+      return 0;
+    }else if (gewicht > fahrzeug.gewicht) {
+      return 1;
+      
+    }else {
+      return -1;
+    
+  }
+  }
+}
+Collections.sort(fahrzeugliste); //funktioniert nicht ohne Interface
+==============================================================
 MULTIPLE INTERFACES
 interface FirstInterface {
   public void myMethod(); // interface method
