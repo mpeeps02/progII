@@ -1,0 +1,35 @@
+public class OuterClass {
+	public int number= 6;
+	 
+	 public void heyThere() {
+		 System.out.println("Hey There");
+		 
+		 //local InnerClass
+		 class LocalInnerClass{
+			 String localInnerClassVar = "Hey Girl";
+			 
+			 public void printlocalInnerClassVar() {
+				 System.out.println(localInnerClassVar); 
+			 }
+		 }
+		 
+		 LocalInnerClass lic =new LocalInnerClass();
+		lic.printlocalInnerClassVar();
+	 }
+	
+	 
+	 //innere Klasse (ist element von outerclass)
+	 //static inner class
+	 public static class InnerClass{
+		public int number = 8;
+		 
+		 public void helloThere() {
+			 System.out.println("Hello outer");
+		 }
+		 //shadowing: ounter & inner class haben 2x gleiche Variabler
+		 public static void shadowbsp(int number) {
+			 System.out.println("shadowing");
+		 }
+	 }
+	 
+}

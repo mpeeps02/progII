@@ -34,7 +34,8 @@ public class Fahrrad EXTENDS Fahrzeug {
   ...
 }
 public class Fahrrad extends Fahrzeug {
-...
+//super: keyword refers to the superclass (parent) of an object
+			//very similar to the "this" keyword, while using inheritence
   public Fahrrad(int anzRaeder, String hersteller, float gewicht, int anzGaenge,
     Fahrradtyp fahrradtyp, String rahmenNr) {
     SUPER(anzRaeder, hersteller, gewicht);

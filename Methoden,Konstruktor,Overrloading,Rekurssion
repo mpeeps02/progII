@@ -98,3 +98,47 @@ public class Main {
     }
   }
 }
+==========================================================
+
+//method overriding = declaring a method in sub class
+		//which is already present in parent class 
+			//done so that a child class can give its own implementation
+			//each class uses the method that is more close
+
+//own implementation of speak method
+	//method is considered the overriding method
+	//override ermöglicht dog class ihre methode zu nutzen
+
+//passing a string variable
+	/*String name = "peeps";
+	
+	hello(name); //referenz 
+}
+static void hello(String name) { //nur void: ohne return 
+System.out.println("Hello");*/
+	
+	/*int x=3;
+	int y=4;
+	int z=add(x,y);
+	System.out.println(z);
+}
+static int add(int x, int y) { //return type angeben
+	int z=x+y;
+	return z;
+	*/
+	
+//overloaded methods
+/*	int x =add(1,2,3);
+	System.out.println(x);
+}
+static int add(int a, int b) {
+	System.out.println("#1");
+	return a+b;
+}
+static int add(int a, int b,int c) {
+	System.out.println("#2");
+	return a+b+c;
+}
+*/
+}}
+

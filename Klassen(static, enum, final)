@@ -81,6 +81,9 @@ for (Level myVar : Level.values()) {
 }
 ============================================================
 STATIC VS NON-STATIC
+//static : modifier
+		// a single copy of a variable/method is created and shared
+		// the class "owns" the static member
 -static: accessed without creating an object of the class
 -public: only access by objects
 

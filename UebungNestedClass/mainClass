@@ -1,0 +1,25 @@
+import nestedClass.OuterClass.InnerClass;
+
+public class mainClass {
+	public static void main(String []args) {
+		
+		OuterClass outer = new OuterClass();
+		 
+		outer.heyThere();
+		//non-static InnerClass
+		OuterClass.InnerClass inner = outer.new InnerClass();
+		inner.helloThere();
+		
+		//static InnerClass 
+		//OuterClass.InnerClass inner = new OuterClass.InnerClass();
+		//Shadowing
+		
+		
+		
+		OuterClass.InnerClass innershadow = outer.new InnerClass();
+		
+		System.out.println(inner.number + outer.number);
+		
+		InnerClass.shadowbsp(0);
+;	}
+}
