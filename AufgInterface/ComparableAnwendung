@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections;
+
+public class ComparableAnwendung {
+	public static void main(String args[]) {
+		List<Fahrzeug> fahrzeugliste = new ArrayList<Fahrzeug>();
+		fahrzeugliste.add(new Fahrzeug(1, 1500.0, "kleiner PKW"));
+		fahrzeugliste.add(new Fahrzeug(2, 2100.0, "grosser PKW"));
+		fahrzeugliste.add(new Fahrzeug(3, 1800.0, "mittlerer PKW"));
+		fahrzeugliste.add(new Fahrzeug(4, 100.0, "ganz klein PKW"));
+		// Sortierung durchfuehren
+		
+		Collections.sort(fahrzeugliste);
+		//Schleife?
+		
+		// hier soll eine bereits in Java vorhandene Methode aufgerufen werden
+		//System.out.println("Fahrzeuge = "+fahrzeugliste);
+		System.out.println(fahrzeugliste);
+		
+	}
+	
+	
+}
